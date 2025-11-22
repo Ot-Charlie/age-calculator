@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Poppins-Bold'; 
+  src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-BoldItalic'; 
+  src: url('./assets/fonts/Poppins-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-ExtraBold'; 
+  src: url('./assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-ExtraBoldItalic'; 
+  src: url('./assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Italic'; 
+  src: url('./assets/fonts/Poppins-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular'; 
+  src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+main{
+    background-color: hsl(0, 0%, 86%);
+}
+section{
+    background-color: hsl(0, 100%, 100%);
+    height: 100vh;
+    margin: 0 10px;
+    border-bottom-right-radius: 55px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.input-group{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    font-family: 'Poppins-Regular', sans-serif;
+    color: hsl(0, 1%, 44%);
+   font-size: 0.8rem;
+}
+label{
+    display: block;
+}
+input[type="number"]{
+    color: hsl(0, 0%, 0%);
+    width: 90px;
+    padding: 7px 10px;
+    border: 1px solid hsl(0, 0%, 86%);;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins-Bold', sans-serif;
+    cursor: pointer;
+}
+input[type="number"]::placeholder{
+    color: hsl(0, 0%, 0%);
+    font-family: 'Poppins-Bold', sans-serif;
+}
+input[type="number"]:focus{
+    outline: none;
+    border: 1px solid hsl(259, 100%, 65%);
+    font-family: 'Poppins-Bold', sans-serif;
+}
+form > input {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    width: 40px;
+     padding: 10px;
+    margin: 0 auto;
+     display: block;
+     margin-top: 20px;
+     position: relative; /*this is to make it appear above the line*/
+     z-index: 10;
+    
+}
+#result{ 
+    width: 90%;
+    font-family: 'Poppins-ExtraBoldItalic', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    border-top: 1px solid hsl(0, 0%, 86%);
+    margin-top: -20px;
+   padding-top: 40px;
+}
+#result span{
+    color: hsl(259, 100%, 65%);
+}
+.error-msg {
+    color: hsl(0, 100%, 67%);
+    font-family: 'Poppins-Italic', sans-serif;
+    font-size: 0.5rem;
+    margin-top: 5px;
+    display: block;
+    height: 10px; /* Keeps space so layout doesn't jump */
+  margin-top: 4px;
+}
+/* When we add the class 'error' to the parent div via JS: */
+.input-field.error label {
+  color: hsl(0, 100%, 67%);;
+}
+.input-field.error input {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+
+
+
+
+
+ .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

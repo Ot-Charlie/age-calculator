@@ -5,33 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+<main>
+  <section>
+    <form id="age-calculator-form">
+      <div class="input-group">
+      <div>
+        <label for="day">DAY</label>
+        <input type="number" id="day" name="day" placeholder="DD" min="" max="" >
+      <small class="error-msg"></small>
+      </div>
+      <div>
+        <label for="month">MONTH</label>
+        <input type="number" id="month" name="month" placeholder="MM" min="" max="" >
+      <small class="error-msg"></small>
+      </div>
+      <div>
+        <label for="year">YEAR</label>
+        <input type="number" id="year" name="year" placeholder="YYYY" min="" max="">
+      <small class="error-msg"></small>
+      </div>
+      </div>
+     <input 
+  type="image" 
+  src="./assets/images/icon-arrow.svg" 
+  alt="Submit"
+  class="arrow"
+/>
+    </form>
+    <div id="result">
+      <p><span id="years">--</span> years</p>
+      <p><span id="months">--</span> months</p>
+      <p><span id="days">--</span> days</p>
+    </div>
+  </section>
+</main>
+ 
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="https://onwuli-charles.netlify.app">Onwuli Charles</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
