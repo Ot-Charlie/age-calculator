@@ -65,7 +65,6 @@ By using Javascript logic in validating users input against the current date and
 ### Continued development
 I hope I can continue building and getting better at replicating pixel perfect designs as well as improving my javascript logic abilities.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 
 
